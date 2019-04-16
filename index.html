@@ -21,7 +21,12 @@
 		}
 
 		section {
-			width: 960px;
+			/* width: 960px; */
+			width: 80%;
+			/* 
+			   Let's experiment! Change a style property that controls width of all elements inside "section" 
+			   If we change from a fixed-width to a relative width, the content adapts better for different screen sizes. 
+			*/
 			margin: 20px auto;
 		}
 
@@ -74,18 +79,18 @@
 
 		<!-- This is an HTML comment. Find the comments below and follow the instructions. -->
 
-		<h1>Visit Scenic Nicholasville a giant neighborhood of Lexington</h1>
+		<h1>Visit Scenic Nicholasville</h1>
 
 		<div id='map'></div>
 
 
-		<h2>about this map</h2>
+		<h2>a giant neighborhood of Lexington</h2>
 		<p></p>
 
 		<ul>
 			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
 			<li>See my projects on GitHub:
-				<a href="https://github.com/Offonatangent">New Maps Plus</a>
+				<a href="https://github.com/Offonatangent">@Offonatangent</a>
 			</li>
 
 		</ul>
@@ -114,7 +119,7 @@
 		}).addTo(map);
 
 		// write a custom message for the Leaflet tooltip
-		var message = 'Nicholasville Sponging off of Lexingtons Awesomness';
+		var message = "Nicholasville Sponging off of Lexington's Awesomness";
 
 		// add a marker to the center of the map and open the tooltip
 		L.marker(map.getCenter())
